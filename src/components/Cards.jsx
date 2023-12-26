@@ -3,7 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 
 const Cards = () => {
   return (
-    <div className={`flex-col gap-10 w-full px-36 xl:px-[14rem] py-2`}>
+    <div className={`flex-col gap-10 w-full responsive py-2`}>
       <div
         className={`w-[450px] h-274 flex-shrink-0 transition-all duration-1000 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11 mr-auto flex flex-col gap-4 relative`}
       >
