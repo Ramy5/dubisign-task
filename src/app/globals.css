@@ -15,6 +15,10 @@ body {
   color: white;
 }
 
+.img {
+  background-image: url("/test.png");
+}
+
 .animation_delay-3 {
   animation-delay: 0.3s !important;
 }
