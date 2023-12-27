@@ -1,9 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 
 const Cards = () => {
+  const targetRef = useRef();
+
+  const [targetElement, setElement] = useState();
+
+  useEffect(() => {
+    setElement(targetRef.current);
+  }, []);
+
   return (
-    <div className={`flex-col gap-10 w-full px-60 py-2`}>
+    <div className={`flex-col gap-10 w-full px-28 xl:px-60 py-2`}>
       <div
         className={`w-[450px] h-274 flex-shrink-0 transition-all duration-1000 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11 mr-auto flex flex-col gap-4 relative`}
       >
@@ -27,7 +37,8 @@ const Cards = () => {
           speed={5000}
           scale={[1, 1.3]}
           opacity={[0, 1]}
-          easing="easeInQuad"
+          easing="ease"
+          targetElement={targetElement}
         >
           <img
             className={`absolute -top-16 -right-8`}
@@ -45,6 +56,7 @@ const Cards = () => {
             103,618
           </p>
         </Parallax>
+
         <p className="text-5xl">103,618</p>
         <p className="text-sm text-[#676666]">
           Every community has it’s own magic
@@ -55,10 +67,12 @@ const Cards = () => {
             <Parallax
               translateY={["0px", "100px"]}
               translateX={["0px", "600px"]}
-              speed={5000}
+              speed={10000}
               scale={[1, 2]}
               style={{ color: "#fff" }}
-              easing="easeOutQuart"
+              easing="ease"
+              targetElement={targetElement}
+              rootMargin={{ top: -100, right: 0, bottom: -200, left: 0 }}
             >
               <span>103,618</span>
             </Parallax>
@@ -67,7 +81,9 @@ const Cards = () => {
         </p>
       </div>
       <div className="w-[450px] h-274 flex flex-col ml-auto gap-4 flex-shrink-0 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11">
-        <p className="text-5xl opacity-0">103,618</p>
+        <p ref={targetRef} className="text-5xl opacity-0">
+          103,618
+        </p>
         <p className="text-sm text-[#676666]">
           Every community has it’s own magic
         </p>
