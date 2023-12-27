@@ -28,7 +28,7 @@ const NeedMore = () => {
         scale={[0.6, 1]}
         opacity={[0, 1]}
         easing="easeInOutBack"
-        className="absolute left-44"
+        className="absolute left-16 xl:left-44"
       >
         <img src="/Ellipse 32.svg" alt="ellipse" />
       </Parallax>

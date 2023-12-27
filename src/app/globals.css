@@ -15,6 +15,32 @@ body {
   color: white;
 }
 
+.responsive {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .responsive {
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .responsive {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .responsive {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+
 .img {
   background-image: url("/test.png");
 }

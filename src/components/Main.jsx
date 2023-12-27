@@ -10,7 +10,7 @@ const Main = () => {
         scale={[0.75, 1]}
         easing="easeInQuad"
       >
-        <p className="mb-2 text-4xl animate_from_bottom">
+        <p className="mb-2 text-md xl:text-4xl animate_from_bottom">
           Dubai property market(year to date) 2023 vs. 2021.
         </p>
       </Parallax>

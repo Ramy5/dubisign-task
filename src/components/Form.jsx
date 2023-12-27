@@ -26,8 +26,8 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full mb-44">
-      <div className="w-[904px] h-[435px] mx-auto img flex ">
+    <div className="w-full p-3 mb-44">
+      <div className="lg:w-[904px] h-[435px] mx-auto img flex flex-col lg:flex-row ">
         <div className="p-8 text-3xl font-medium leading-10">
           <p>Tald to an expert</p>
         </div>

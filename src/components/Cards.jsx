@@ -13,9 +13,9 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className={`flex-col gap-10 w-full px-28 xl:px-60 py-2`}>
+    <div className={`flex flex-col gap-6 lg:gap-0 w-full responsive py-2`}>
       <div
-        className={`w-[450px] h-274 flex-shrink-0 transition-all duration-1000 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11 mr-auto flex flex-col gap-4 relative`}
+        className={`lg:w-[450px] lg:h-274 flex-shrink-0 transition-all duration-1000 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11 self-center lg:self-start flex flex-col gap-4 relative`}
       >
         <Parallax
           translateY={["-100px", "0px"]}
@@ -80,7 +80,7 @@ const Cards = () => {
           YoY Change
         </p>
       </div>
-      <div className="w-[450px] h-274 flex flex-col ml-auto gap-4 flex-shrink-0 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11">
+      <div className="lg:w-[450px] lg:h-274 flex flex-col self-center lg:self-end gap-4 flex-shrink-0 rounded-2xl border border-[#5b5858] backdrop-blur-40 p-11">
         <p ref={targetRef} className="text-5xl opacity-0">
           103,618
         </p>
